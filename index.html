@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <h1>To-Do List</h1>
+    <div class="todo-container">
+      <h2>Lista de Tarefas</h2>
+      <form class="todo-form" id="todoForm">
+        <input
+          type="text"
+          id="taskName"
+          placeholder="Nome da tarefa"
+          required
+        />
+        <button type="submit">Adicionar</button>
+      </form>
+      <ul class="task-list" id="taskList"></ul>
+    </div>
+
+    <div class="clear-buttons">
+      <button class="clear-all" onclick="clearAllTasks()">Limpar Todas</button>
+      <button class="clear-completed" onclick="clearCompletedTasks()">
+        Limpar Concluídas
+      </button>
+    </div>
+    <footer>
+      <p>
+        &copy; 2025 - Desenvolvido por
+        <a href="https://www.linkedin.com/in/lucas-ackermann05" target="_blank"
+          >Lucas Ackermann</a
+        >.
+      </p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
